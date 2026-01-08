@@ -26,7 +26,7 @@ def test_party_list_page_returns_list_of_users_future_parties(authenticated_clie
     )
     create_party(
         organizer=user,
-        party_date=today - datetime.timedelta(days=10),
+        party_date=today - datetime.timedelta(days=1000),
         venue="Venue 4",
     )
 
